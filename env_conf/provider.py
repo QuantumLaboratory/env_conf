@@ -26,7 +26,6 @@ class Field:
                 return None
             else:
                 raise Missing("")
-            return None
         if isinstance(self.type_, type):
             if issubclass(self.type_, FieldType):
                 type_ = self.type_()
