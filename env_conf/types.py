@@ -1,8 +1,11 @@
+from abc import ABCMeta, abstractmethod
 from typing import List as _List
 from .errors import ParseError
 
 
-class FieldType:
+class FieldType(metaclass=ABCMeta):
+
+    @abstractmethod
     def parse(self, value):
         raise NotImplementedError("subclass should implement this method.")
 
