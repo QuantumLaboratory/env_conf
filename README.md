@@ -31,6 +31,8 @@ config = Config()
 
 ## TODO
 
- - More tests
  - Better documentation
  - More types
+ - Allow builtin types used as `FieldType` (for example `Field(str)`)
+   (By implement a `TypeWrapper` class and delegate parse to the type
+   argument)
