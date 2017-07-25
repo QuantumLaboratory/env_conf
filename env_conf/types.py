@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from typing import List as _List
+
 from .errors import ParseError
 
 
@@ -7,7 +8,8 @@ class FieldType(metaclass=ABCMeta):
 
     @abstractmethod
     def parse(self, value):
-        raise NotImplementedError("subclass should implement this method.")
+        raise NotImplementedError(   # pragma: no cover
+            "subclass should implement this method.")
 
     def __str__(self):
         return '<{}>'.format(self.__class__.__name__)
@@ -62,3 +64,8 @@ class List(FieldType):
                 raise ParseError(msg)
             values.append(val)
         return values
+
+
+class Bytes(FieldType):
+    def parse(self, value: str) -> bytes:
+        return value.encode('utf-8')
