@@ -44,9 +44,11 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
+            pip install codecov
             make check-import
             make check
             make test
+            codecov
 
       - store_artifacts:
           path: test-reports
