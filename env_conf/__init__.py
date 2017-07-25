@@ -1,5 +1,3 @@
-import os
-
 from .provider import EnvProvider, Field
 
 VERSION = (0, 1, 0)
