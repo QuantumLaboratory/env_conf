@@ -4,7 +4,7 @@ Env.conf is a utility library which helps you read and parse configurations from
 environment.
 
 
-[![CircleCI](https://img.shields.io/circleci/project/github/QuantumGhost/env_conf.svg?style=plastic)](https://circleci.com/gh/QuantumGhost/env_conf)
+[![Build Status](https://travis-ci.org/QuantumGhost/env_conf.svg?branch=master)](https://travis-ci.org/QuantumGhost/env_conf)
 [![codecov](https://codecov.io/gh/QuantumGhost/env_conf/branch/master/graph/badge.svg)](https://codecov.io/gh/QuantumGhost/env_conf)
 
 ## Usage
