@@ -6,6 +6,7 @@ environment.
 
 [![Build Status](https://travis-ci.org/QuantumGhost/env_conf.svg?branch=master)](https://travis-ci.org/QuantumGhost/env_conf)
 [![codecov](https://codecov.io/gh/QuantumGhost/env_conf/branch/master/graph/badge.svg)](https://codecov.io/gh/QuantumGhost/env_conf)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FQuantumGhost%2Fenv_conf.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FQuantumGhost%2Fenv_conf?ref=badge_shield)
 
 ## Usage
 
@@ -40,3 +41,7 @@ config = Config()
  - Allow builtin types used as `FieldType` (for example `Field(str)`)
    (By implement a `TypeWrapper` class and delegate parse to the type
    argument)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FQuantumGhost%2Fenv_conf.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FQuantumGhost%2Fenv_conf?ref=badge_large)
